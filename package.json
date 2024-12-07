@@ -1,6 +1,6 @@
 {
   "name": "@lekoma/promise-as-u-go",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library that combines the concept of promises with the Go-inspired approach",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
