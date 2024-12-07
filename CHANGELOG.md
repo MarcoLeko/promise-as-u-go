@@ -1,5 +1,8 @@
 # Changelog
 
+## 2024-05-23 - 1.0.2
+- Fix link to github repository
+
 ## 2024-05-23 - 1.0.1
 - Change link to github repository
 
