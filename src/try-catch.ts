@@ -1,4 +1,4 @@
-async function tryResolve<T>(
+async function tryCatch<T>(
   promise: Promise<T>,
 ): Promise<readonly [undefined, T] | [Error]> {
   return promise
@@ -6,4 +6,4 @@ async function tryResolve<T>(
     .catch((error) => [error] as const);
 }
 
-export { tryResolve };
+export { tryCatch };
