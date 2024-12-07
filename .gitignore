@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_STORE
+.npmrc
+dist/
+coverage/
+node_modules/

@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "airbnb-base",
+        "airbnb-typescript/base"
+    ],
+    "root": true,
+    "parserOptions": {
+       "project": "./tsconfig.json"
+    },
+    "rules": {
+        "import/prefer-default-export": "warn" // General rule configuration (optional)
+    },
+    "overrides": [
+        {
+            "files": ["**/*.ts"], // Target all TypeScript files in your src folder and subfolders
+            "rules": {
+                "import/prefer-default-export": "off" // Override the rule for TypeScript files
+            }
+        }
+    ]
+}
