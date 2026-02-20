@@ -1,6 +1,6 @@
 # Promise-as-U-Go
 
-`promise-as-u-go` is a small utility library that provides two functions to handle promises with built-in error catching and easier management of results. It wraps your promises in a try/catch block and returns consistent outcomes—whether the promise resolves or rejects—allowing you to handle errors gracefully while maintaining clean and readable code.
+`@lekoma/promise-as-u-go` is a small utility library that provides two functions to handle promises with built-in error catching and easier management of results. It wraps your promises in a try/catch block and returns consistent outcomes—whether the promise resolves or rejects—allowing you to handle errors gracefully while maintaining clean and readable code.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,15 +14,15 @@
 
 ## Installation
 
-To install `promise-as-u-go`, use npm or yarn:
+To install `@lekoma/promise-as-u-go`, use npm or yarn:
 
 ```bash
-npm install promise-as-u-go
+npm install @lekoma/promise-as-u-go
 ```
 or
 
 ```bash
-yarn add promise-as-u-go
+yarn add @lekoma/promise-as-u-go
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ tryCatch is a utility function that wraps a promise and handles errors. It retur
 Example: Catching Errors
 
 ```ts
-import { tryCatch } from 'promise-as-u-go';
+import { tryCatch } from '@lekoma/promise-as-u-go';
 
 async function example() {
   const [error, result] = await tryCatch(Promise.reject(new Error('Something went wrong')));
@@ -59,7 +59,7 @@ If the promise resolves successfully, tryCatch returns `[undefined, result]`. If
 Example: Catching Specific Errors
 
 ```ts
-import { tryCatchOn } from 'promise-as-u-go';
+import { tryCatchOn } from '@lekoma/promise-as-u-go';
 
 class SpecificError extends Error {}
 
@@ -83,7 +83,7 @@ If the promise is rejected and the error matches one of the classes in the error
 
 Example: Catching Any Error
 ```ts
-import { tryCatchOn } from 'promise-as-u-go';
+import { tryCatchOn } from '@lekoma/promise-as-u-go';
 
 async function example() {
   const [error, result] = await tryCatchOn(
